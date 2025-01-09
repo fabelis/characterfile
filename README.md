@@ -37,7 +37,7 @@ Create a `config.json` in the root directory:
 ```json
 {
     "completion_provider": "anthropic",
-    "output_file_name": "bob.json"
+    "output_file_name": "shinji02.json"
 }
 ```
 > 💡 **MUST READ:** Output files are generated in `out/characters/*.json` if you would like to iterate on an existing character place it there with the same `"output_file_name"`.
@@ -45,14 +45,15 @@ Create a `config.json` in the root directory:
 Create an `input.json` in the root directory:
 ```json
 {
-    "name": "Bob",
+    "name": "Shinji",
     "facts": [
-        "He needs to shower more often",
-        "He loves to laugh",
+        "Is a growing boy",
+        "has existential crisis",
+        "has to battle for the fate of the world",
+        "family dynamics are complicated to say the least"
     ],
     "files": [
-        "american-psycho-script.txt",
-        "the-big-short.pdf"
+        "endofevangelion.txt"
     ]
 }
 ```

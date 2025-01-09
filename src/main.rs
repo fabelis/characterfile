@@ -13,6 +13,10 @@ use std::env;
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
+    // generate directory structure
+    std::fs::create_dir_all("out/characters").expect("Failed to create character directory");
+    std::fs::create_dir_all("in").expect("Failed to input directory");
+
     // init logging
     let colors = ColoredLevelConfig::new()
         .error(Color::Red)
